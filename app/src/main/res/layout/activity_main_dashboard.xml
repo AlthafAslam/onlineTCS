@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activiies.MainActivityDashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="328dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradientbg">
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="196dp"
+            android:layout_height="196dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/parenticon"
+            app:civ_border_color="@color/RoundImageBoarder"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tVNameOfParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="259dp"
+            android:layout_weight="1"
+            android:text="Mohammed Aslam "
+            android:textColor="@color/grey_one"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tVPhoneOfParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVNameOfParent"
+            android:layout_centerHorizontal="true"
+            android:text="9447472307"
+            android:textColor="@color/grey_one" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RcycView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:scrollbars="vertical"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="25dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/stat_notify_more"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="31dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

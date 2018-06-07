@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/siblingCardview"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/siblingPhoto"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:src="@drawable/icon_boy2"
+                app:civ_border_color="@color/RoundImageBoarder"
+                />
+
+            <TextView
+                android:id="@+id/tvsiblingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="71dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Sibling 1 Name"
+                android:textSize="25dp"
+                android:layout_marginRight="71dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
